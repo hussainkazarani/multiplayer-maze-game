@@ -22,6 +22,8 @@ Live Demo: [_click me!_](https://pathless.hussainkazarani.site/)
 <div align="center">
 <!-- Top: Gameplay GIF -->
 
+https://github.com/user-attachments/assets/a378bd68-6ec7-4b5f-865c-65ada32c538c
+
 <!-- <figcaption><em>gameplay loop</em></figcaption> -->
 
  <p>&nbsp;</p>
