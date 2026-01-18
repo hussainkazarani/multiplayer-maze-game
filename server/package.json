@@ -1,0 +1,19 @@
+{
+    "name": "multiplayer-maze-game",
+    "version": "1.0.0",
+    "description": "",
+    "main": "server.js",
+    "type": "module",
+    "scripts": {
+        "start": "nodemon server.js"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "dotenv": "^17.2.1",
+        "nodemon": "^3.1.10",
+        "pg": "^8.16.3",
+        "pm2": "^6.0.8",
+        "socket.io": "^4.8.1"
+    }
+}
