@@ -1,7 +1,7 @@
 # 🚩 Pathless Trails
 
 A fast-paced multiplayer maze where players pick a username, dive in, and race to collect as many flags as possible.
-Simple to pick up, but full of competition — run, collect, and win!
+Simple to pick up, but full of competition - run, collect, and win!
 
 This project was built using **Node.js, Socket.io, and PostgreSQL**, with Docker and AWS for hosting.
 It offers real-time multiplayer rooms, player profiles, leaderboards, and smooth maze gameplay.
@@ -9,7 +9,7 @@ It offers real-time multiplayer rooms, player profiles, leaderboards, and smooth
 ## 🕹️ Features
 
 -   Jump into real-time multiplayer rooms and play with others instantly.
--   Pick a unique username — no passwords, no hassle.
+-   Pick a unique username - no passwords, no hassle.
 -   Create your own game or join someone else’s in the lobby.
 -   Navigate a maze with collisions, collect flags, and race against the timer.
 -   Track your progress with a personal profile: games played, flags collected, and join date.
@@ -52,7 +52,7 @@ https://github.com/user-attachments/assets/a378bd68-6ec7-4b5f-865c-65ada32c538c
 
 ### Prerequisites
 
--   **Docker** (latest version recommended) — [Download Docker](https://www.docker.com/get-started)
+-   **Docker** (latest version recommended) - [Download Docker](https://www.docker.com/get-started)
 -   **Docker Compose** (usually included with Docker Desktop)
 
 ### Installation
@@ -85,7 +85,7 @@ https://github.com/user-attachments/assets/a378bd68-6ec7-4b5f-865c-65ada32c538c
     POSTGRES_PORT=5432
     ```
 
-> **Note:** `POSTGRES_HOST` should remain "custom-postgres" — this is the service name defined in `docker-compose.yml` and ensures Node.js connects to the PostgreSQL container. Do **NOT** use "localhost" inside Docker.
+> **Note:** `POSTGRES_HOST` should remain "custom-postgres" - this is the service name defined in `docker-compose.yml` and ensures Node.js connects to the PostgreSQL container. Do **NOT** use "localhost" inside Docker.
 
 ## Running the Application
 
