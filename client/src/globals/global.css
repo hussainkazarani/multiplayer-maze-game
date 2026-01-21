@@ -1,0 +1,72 @@
+/* FONTS */
+@font-face {
+    font-family: 'Outfit';
+    src: url('/client/public/fonts/');
+    src: url('/client/public/fonts/outfit/Outfit-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Outfit';
+    src: url('/client/public/fonts/outfit/Outfit-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Outfit';
+    src: url('/client/public/fonts/outfit/Outfit-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Outfit';
+    src: url('/client/public/fonts/outfit/Outfit-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Outfit';
+    src: url('/client/public/fonts/outfit/Outfit-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Outfit';
+    src: url('/client/public/fonts/outfit/Outfit-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit';
+    line-height: 1.5;
+}
+
+/* RESETS */
+html,
+body {
+    height: 100%;
+    width: 100%;
+    background: black;
+}
+
+body {
+    opacity: 1;
+    transition: opacity 1s ease;
+}
+
+body.preload {
+    opacity: 0;
+}
+
+body.fade-out {
+    opacity: 0;
+}
