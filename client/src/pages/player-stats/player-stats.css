@@ -1,0 +1,113 @@
+.page {
+    min-height: 100dvh;
+    background-image: url('/client/public/background.gif');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.page {
+    color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    padding: 5% 20%;
+}
+
+.header1 {
+    font-size: 3rem;
+}
+
+.p1 {
+    font-size: 1.3rem;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2%;
+}
+
+.label {
+    font-weight: 300;
+    color: #cccccc;
+}
+
+.value {
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.player-profile-p1,
+.player-profile-p2,
+.player-profile-p3,
+.player-profile-p4 {
+    display: flex;
+    align-items: center; /* vertically centers image and text */
+    gap: 0.5rem;
+}
+
+img {
+    position: relative;
+    top: 2px;
+    transform: scaleX(-1);
+    width: 40px;
+    height: auto;
+    display: block;
+}
+
+.p2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    width: 100%;
+}
+.header2 {
+    font-size: 3rem;
+}
+
+.container {
+    background-color: #f0f0f0;
+    color: black;
+    border-radius: 3px;
+    padding: 10px;
+    width: 100%;
+}
+
+.test-1 {
+    position: relative;
+    right: -10px;
+    color: #cccccc;
+    top: 2px;
+}
+
+.name1 {
+    font-size: 1.4rem;
+    color: darkslategray;
+}
+
+.value2 {
+    font-weight: 700;
+}
+
+.label2 {
+    font-weight: 300;
+}
+
+#tempdiv {
+    color: white;
+}
+
+.backbtn {
+    position: absolute;
+    z-index: 1;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    top: 9%;
+    left: 3%;
+}
+
+.backbtn img {
+    width: 100%;
+    height: 100%;
+    transform: scaleX(1);
+}
