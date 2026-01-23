@@ -1,0 +1,94 @@
+.page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100dvh;
+    background-image: url('/client/public/background.gif');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+}
+
+.container__heading {
+    font-size: 5rem;
+    text-align: center;
+    margin-top: 4em;
+    color: whitesmoke;
+}
+
+.container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 2em;
+}
+
+.namebox {
+    width: 20em;
+    height: 3em;
+    border-radius: 3px;
+    border-width: 1.5;
+    padding: 0 1em;
+    text-align: center;
+    font-weight: bold;
+}
+
+.namebox:focus {
+    outline: none;
+    border: 3px solid gray;
+}
+
+.namebox::placeholder {
+    color: grey;
+    font-weight: normal;
+}
+
+.namebox.error {
+    background-color: #e0b8b8;
+    color: #8f3d3d;
+}
+
+.namebox.error:focus {
+    outline: none;
+    border: 2px solid #8f3d3d;
+}
+
+.namebox.error::placeholder {
+    color: #8f3d3d;
+}
+
+.namebox.success {
+    background-color: #b8e0b8;
+    color: #3d8f3d;
+}
+
+.namebox.success:focus {
+    outline: none;
+    border: 2px solid #3d8f3d;
+}
+
+.namebox.success::placeholder {
+    color: #3d8f3d;
+}
+
+.btn {
+    font-size: 1rem;
+    width: 10em;
+    height: 2em;
+    margin-top: 1em;
+    cursor: pointer;
+    border: none;
+    transition: transform 0.1s linear 0s;
+}
+
+.btn:hover {
+    border: none;
+    background-color: #dad8d8;
+    transform: translateY(-2px);
+}

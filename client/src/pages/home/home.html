@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>Pathless Trails</title>
+        <link rel="stylesheet" href="/client/src/globals/global.css" />
+        <link rel="stylesheet" href="/client/src/pages/home/home.css" />
+        <link rel="icon" type="image/png" href="/client/public/favicon.png" />
+    </head>
+    <body class="preload">
+        <div class="page">
+            <div class="content">
+                <h2 class="container__heading">Welcome To Pathless Trails!</h2>
+                <div class="container">
+                    <div class="container__namebox">
+                        <input
+                            type="text"
+                            class="namebox"
+                            id="player-name"
+                            placeholder="Enter your name"
+                            autocomplete="off"
+                            autocapitalize="off"
+                        />
+                    </div>
+                    <button class="btn">Play Game</button>
+                </div>
+            </div>
+        </div>
+        <script type="module" src="/client/src/globals/global.js"></script>
+        <script type="module" src="/client/src/pages/home/home.js"></script>
+        <script src="/socket.io/socket.io.js"></script>
+    </body>
+</html>
