@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <meta charset="utf8" />
+        <title>Pathless Trails</title>
+        <link rel="stylesheet" href="/client/src/globals/global.css" />
+        <link rel="stylesheet" href="/client/src/pages/game/game.css" />
+        <link rel="icon" type="image/png" href="/client/public/favicon.png" />
+    </head>
+    <body>
+        <canvas id="canvas"></canvas>
+        <button id="start-game-timer" class="creator-only">Start Game</button>
+        <div class="popup-screen hidden" id="popup">
+            <div class="popup-menu">
+                <!-- <h2 class="popupheading">🏆 LEADERBOARDS</h2>
+                <p style="color: green; font-weight: bold" class="popup-item">1. You - 8 flags</p>
+                <p class="popup-item">2. Alice - 7 flags</p>
+                <p class="popup-item">3. Bob - 5 flags</p>
+                <p class="popup-item">4. Charlie - 3 flags</p>
+                <button id="button1" class="popup-btn">Leave</button> -->
+            </div>
+        </div>
+        <script type="module" src="/client/src/globals/global.js"></script>
+        <script type="module" src="/client/src/pages/game/game.js"></script>
+        <script src="/socket.io/socket.io.js"></script>
+    </body>
+</html>
