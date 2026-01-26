@@ -1,0 +1,6 @@
+FROM postgres:14
+
+EXPOSE 5432
+
+# copy your init SQL (runs automatically on first container start)
+COPY db/init.sql /docker-entrypoint-initdb.d/
