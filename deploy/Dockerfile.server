@@ -1,0 +1,27 @@
+# get image
+FROM node:22
+
+# download node
+RUN apt update
+RUN	apt-get install -y postgresql-client
+RUN apt clean
+
+# copy package.json and install node module
+WORKDIR /home/pathless-trails/server
+COPY server/package*.json ./
+RUN npm install
+
+# set working directory
+WORKDIR /home/pathless-trails
+COPY . .
+
+# home directory
+RUN chmod +x deploy/entry.sh
+
+# expose port
+EXPOSE 1000
+
+WORKDIR /home/pathless-trails/deploy
+
+# run server
+CMD ["./entry.sh"]
