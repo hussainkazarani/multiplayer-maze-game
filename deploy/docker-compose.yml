@@ -1,0 +1,27 @@
+services:
+    custom-postgres:
+        container_name: pathless-database
+        env_file: ../.env
+        build:
+            context: ..
+            dockerfile: deploy/Dockerfile.db
+        ports:
+            - '${POSTGRES_PORT}:5432'
+        restart: always
+        volumes:
+            - pathless-db:/var/lib/postgresql/data 
+
+    custom-node:
+        container_name: pathless-server
+        env_file: ../.env
+        build:
+            context: ..
+            dockerfile: deploy/Dockerfile.server
+        ports:
+            - '${PORT}:1000'
+        restart: always
+        depends_on:
+            - custom-postgres
+
+volumes:
+  pathless-db:
