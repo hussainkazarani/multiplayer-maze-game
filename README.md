@@ -70,7 +70,8 @@ https://github.com/user-attachments/assets/a378bd68-6ec7-4b5f-865c-65ada32c538c
 
 2. **Configure Environment Variables**
 
--   The repository already includes a `.env` file with dummy values.
+-   The repository already includes a `.env.example` file with dummy values.
+-   Update its name to `.env`
 -   Open the `.env` file at the root and update the database and server credentials as needed:
 
     ```env
