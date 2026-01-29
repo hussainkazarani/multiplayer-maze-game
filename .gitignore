@@ -12,4 +12,4 @@ package-lock.json
 # Other files
 setup.txt
 dummy.sql
-# .env
+.env
