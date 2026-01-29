@@ -1,0 +1,23 @@
+# OS/system junk
+.DS_Store
+Thumbs.db
+
+# Git files
+.git
+.gitignore
+
+# Node.js
+server/node_modules
+server/npm-debug.log
+server/yarn.lock
+server/pnpm-lock.yaml
+
+# Docker itself
+deploy/docker-compose.yml
+deploy/Dockerfile.*
+
+# Other files
+readme-assets
+README.md
+setup.txt
+dummy.sql
